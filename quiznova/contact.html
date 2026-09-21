@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact QuizNova">
+  <meta name="theme-color" content="#06101d">
+  <title>Contact | QuizNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><span class="ambient-orb orb-one"></span><span class="ambient-orb orb-two"></span></div>
+<nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+  <div class="container-xl">
+    <a class="navbar-brand brand" href="index.html"><span class="brand-mark"></span><span class="brand-word">Quiz<span>Nova</span></span></a>
+    <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li><li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li><li class="nav-item"><a class="nav-link active" href="contact.php">Contact</a></li></ul>
+      <div class="nav-actions" data-auth-area><a class="btn btn-text" href="auth/register.php">Create account</a><a class="btn btn-accent" href="auth/login.php">Sign in <i class="bi bi-arrow-up-right"></i></a></div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero compact-hero"><div class="container-xl"><div class="kicker reveal"><span></span> Contact and support</div><h1 class="reveal">Send a message.<br><span>We will store it securely.</span></h1><p class="reveal">This form demonstrates validated user input connected to PHP and a MySQL messages table.</p></div></section>
+  <section class="section-space pt-3">
+    <div class="container-xl">
+      <div class="contact-grid">
+        <aside class="premium-card contact-info reveal">
+          <span class="micro-label">How this page works</span>
+          <h2>Frontend validation meets backend storage.</h2>
+          <p class="section-subtitle">Your message is validated in JavaScript, submitted to a PHP endpoint and stored in MySQL.</p>
+          <div class="contact-points">
+            <div class="contact-point"><i class="bi bi-check2-square"></i><div><strong>Form validation</strong><span>Required fields and email format checked before submission.</span></div></div>
+            <div class="contact-point"><i class="bi bi-filetype-php"></i><div><strong>PHP processing</strong><span>The server validates inputs again before saving.</span></div></div>
+            <div class="contact-point"><i class="bi bi-database"></i><div><strong>MySQL storage</strong><span>Messages are recorded with a timestamp.</span></div></div>
+          </div>
+        </aside>
+        <section class="premium-card contact-form-card reveal">
+          <span class="micro-label">Send a query</span>
+          <h2>Contact QuizNova</h2>
+          <p class="section-subtitle">Complete all fields below.</p>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6"><label class="form-label" for="name">Name</label><input class="form-control" id="name" name="name" placeholder="Your name" minlength="2" maxlength="100" required><div class="invalid-feedback">Enter at least 2 characters.</div></div>
+              <div class="col-md-6"><label class="form-label" for="email">Email address</label><input class="form-control" type="email" id="email" name="email" placeholder="name@example.com" maxlength="120" required><div class="invalid-feedback">Enter a valid email address.</div></div>
+              <div class="col-12"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" name="message" rows="7" placeholder="Write your message here" minlength="5" maxlength="2000" required></textarea><div class="invalid-feedback">Enter at least 5 characters.</div></div>
+              <div class="col-12 d-flex align-items-center justify-content-between flex-wrap gap-3"><small class="muted-text">Messages are stored in the database.</small><button class="btn btn-accent" type="submit">Send message <i class="bi bi-send"></i></button></div>
+              <div class="col-12"><div id="contactMessage" aria-live="polite"></div></div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container-xl py-5"><div class="row g-4 align-items-center"><div class="col-lg-5"><a class="navbar-brand brand" href="index.html"><span class="brand-mark"></span><span class="brand-word">Quiz<span>Nova</span></span></a><p class="footer-copy mt-3 mb-0">Validated contact submissions are handled by PHP and stored in MySQL.</p></div><div class="col-lg-4"><div class="footer-links"><a href="index.html">Home</a><a href="categories.html">Categories</a><a href="leaderboard.html">Leaderboard</a><a href="contact.php">Contact</a></div></div><div class="col-lg-3 text-lg-end"><span class="footer-status"><span></span> Contact form ready</span></div></div><div class="footer-base"><span>QuizNova / ICT 2209 Mini Project</span><span>Contact and data handling</span></div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/contact.js"></script>
+</body>
+</html>
